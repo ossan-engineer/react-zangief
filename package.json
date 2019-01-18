@@ -2,11 +2,12 @@
   "name": "react-zangief",
   "version": "0.1.0",
   "description": "",
-  "main": "useZangief.js",
+  "main": "dist/useZangief.js",
   "scripts": {
     "transpile": "babel src -d dist --copy-files",
     "build": "webpack --mode production",
     "deploy": "gh-pages -d examples/dist",
+    "prepublishOnly": "yarn transpile",
     "publish-demo": "yarn build && yarn deploy",
     "start": "webpack-dev-server --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -30,5 +31,9 @@
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.14"
+  },
+  "peerDependencies": {
+    "react": "16.8.0-alpha.1",
+    "react-dom": "16.8.0-alpha.1"
   }
 }
