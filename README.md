@@ -4,7 +4,7 @@ React Zangief is a library of old and good gif animation (react components). Ide
 
 ## Demo
 
-[GitHub Pages](https://ossan-engineer.github.io/react-zangief)
+[GitHub Pages](https://ossan-engineer.github.io/react-zangief/)
 
 ## Install
 
