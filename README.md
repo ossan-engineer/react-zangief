@@ -1,6 +1,6 @@
 # React Zangief
 
-React Zangief is a library of old and good gif animation (react components). Ideal if you want to give some Zangief and personality to your react application.
+Stateful Zangief componet with React Hooks.
 
 ## Demo
 
@@ -11,6 +11,8 @@ React Zangief is a library of old and good gif animation (react components). Ide
 `yarn add react-zangief`
 
 ### Usage
+
+You need to have React `16.8.0-alpha.1` or later installed to use Hooks API.
 
 #### Static
 
