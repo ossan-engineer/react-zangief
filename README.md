@@ -1,5 +1,7 @@
 # React Zangief
 
+[![NPM](https://img.shields.io/npm/v/react-zangief.svg)](https://www.npmjs.com/package/react-zangief)
+
 Animated Zangief component for React.
 
 ## Storybook
