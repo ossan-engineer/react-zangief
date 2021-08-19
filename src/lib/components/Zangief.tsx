@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Zangief = () => {
+const Zangief: React.FC = () => {
   return <div>Zangief</div>
 }
 
