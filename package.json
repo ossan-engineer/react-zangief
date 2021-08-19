@@ -2,7 +2,7 @@
   "name": "react-zangief",
   "version": "1.0.1",
   "main": "dist/index.js",
-  "private": true,
+  "private": false,
   "files": [
     "dist",
     "README.md"
