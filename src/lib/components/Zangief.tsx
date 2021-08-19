@@ -7,12 +7,13 @@ import attack from '../assets/zangiefLightAttack.gif'
 import damaged from '../assets/zangiefDamaged.gif'
 
 type Props = {
-  action?: 'normal' | 'stand' | 'walk' | 'jump' | 'attack' | 'damaged'
+  action?: 'default' | 'stand' | 'walk' | 'jump' | 'attack' | 'damaged'
   size?: number
+  flip?: boolean
 }
 
 const ACTIONS = {
-  normal,
+  default: normal,
   stand,
   walk,
   jump,
@@ -20,14 +21,19 @@ const ACTIONS = {
   damaged
 }
 
-const Zangief: React.FC<Props> = ({ action = 'normal', size = 32 }) => {
+const Zangief: React.FC<Props> = ({
+  action = 'default',
+  size = 32,
+  flip = false
+}) => {
   return (
     <img
       src={ACTIONS[action]}
       alt="Zangief"
       width={size}
       style={{
-        imageRendering: 'pixelated'
+        imageRendering: 'pixelated',
+        transform: flip ? 'scale(-1,1)' : 'scale(1,1)'
       }}
     />
   )
