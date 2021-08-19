@@ -26,7 +26,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --extensions '.ts,.tsx' --out-dir dist --copy-files",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --extensions '.ts,.tsx' --out-dir dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
@@ -80,6 +80,7 @@
     "@storybook/preset-create-react-app": "^3.2.0",
     "@storybook/react": "^6.3.7",
     "@storybook/storybook-deployer": "^2.8.10",
+    "babel-plugin-inline-import-data-uri": "^1.0.1",
     "cross-env": "^7.0.3",
     "prettier": "^2.3.2"
   },

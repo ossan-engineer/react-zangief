@@ -4,5 +4,13 @@
     "@babel/preset-react",
     "@babel/preset-typescript"
   ],
-  "plugins": ["macros"]
+  "plugins": [
+    "macros",
+    [
+      "inline-import-data-uri",
+      {
+        "extensions": [".gif"]
+      }
+    ]
+  ]
 }
