@@ -1,26 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import useZangief from './useZangief';
 
-function App() {
+
+
+const App: React.FC = () => {
+  const {
+    action,
+    setAction,
+    size,
+    setSize,
+    Zangief,
+  } = useZangief();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      <select name="" id="" onChange={(e) => setAction(e.target.value)}>
+        <option value="default">Default</option>
+        <option value="stand">Stand</option>
+        <option value="walk">Walk</option>
+        <option value="jump">Jump</option>
+        <option value="lightAttack">Light Attack</option>
+        <option value="damaged">Damaged</option>
+      </select>
+      <input
+        type="range"
+        onChange={e => setSize(Number(e.target.value))}
+        value={size}
+        min={16}
+        max={2000}
+      />
+      <span>{size}</span>
+      <div>
+        <Zangief />
+      </div>
     </div>
-  );
-}
+  )
+};
 
 export default App;
