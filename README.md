@@ -10,9 +10,23 @@ Animated Zangief component for React.
 
 https://ossan-engineer.github.io/react-zangief
 
-## Install
+## Installation
 
 `yarn add react-zangief`
+
+## Usage
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Zangief from 'react-zangief';
+
+const App = () => {
+  return <Zangief action="stand" size={16} flip />;
+}
+
+ReactDOM.render(<App />, document.querySelector('#app'));
+```
 
 ## Props
 
