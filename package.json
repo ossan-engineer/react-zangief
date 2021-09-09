@@ -82,7 +82,7 @@
     "@storybook/storybook-deployer": "2.8.10",
     "babel-plugin-inline-import-data-uri": "1.0.1",
     "cross-env": "7.0.3",
-    "prettier": "2.3.2"
+    "prettier": "2.4.0"
   },
   "peerDependencies": {
     "react": "^17.0.2",
