@@ -70,9 +70,9 @@
     ]
   },
   "devDependencies": {
-    "@babel/cli": "7.16.0",
-    "@babel/preset-env": "7.16.5",
-    "@babel/preset-react": "7.16.5",
+    "@babel/cli": "7.17.6",
+    "@babel/preset-env": "7.16.11",
+    "@babel/preset-react": "7.16.7",
     "@storybook/addon-actions": "6.4.9",
     "@storybook/addon-essentials": "6.4.9",
     "@storybook/addon-links": "6.4.9",
