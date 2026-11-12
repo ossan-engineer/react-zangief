@@ -1,47 +1,51 @@
-import React from 'react'
-import { ComponentStory, ComponentMeta } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react-vite'
 
 import Zangief from './Zangief'
 
-export default {
+const meta: Meta<typeof Zangief> = {
   title: 'Zangief',
-  component: Zangief
-} as ComponentMeta<typeof Zangief>
-
-const Template: ComponentStory<typeof Zangief> = (args) => <Zangief {...args} />
-
-export const Default = Template.bind({})
-Default.args = {
-  action: 'default',
-  size: 128
+  component: Zangief,
+  args: {
+    size: 128
+  }
 }
 
-export const Stand = Template.bind({})
-Stand.args = {
-  action: 'stand',
-  size: 128
+export default meta
+
+type Story = StoryObj<typeof meta>
+
+export const Default: Story = {
+  args: {
+    action: 'default'
+  }
 }
 
-export const Walk = Template.bind({})
-Walk.args = {
-  action: 'walk',
-  size: 128
+export const Stand: Story = {
+  args: {
+    action: 'stand'
+  }
 }
 
-export const Jump = Template.bind({})
-Jump.args = {
-  action: 'jump',
-  size: 128
+export const Walk: Story = {
+  args: {
+    action: 'walk'
+  }
 }
 
-export const Attack = Template.bind({})
-Attack.args = {
-  action: 'attack',
-  size: 128
+export const Jump: Story = {
+  args: {
+    action: 'jump'
+  }
 }
 
-export const Damaged = Template.bind({})
-Damaged.args = {
-  action: 'damaged',
-  size: 128
+export const Attack: Story = {
+  args: {
+    action: 'attack'
+  }
+}
+
+export const Damaged: Story = {
+  args: {
+    action: 'damaged'
+  }
 }
