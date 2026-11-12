@@ -9,7 +9,7 @@ describe('Zangief', () => {
 
     const image = screen.getByRole('img', { name: 'Zangief' })
     expect(image).toHaveAttribute('width', '32')
-    expect(image).toHaveStyle({ transform: 'scale(1,1)' })
+    expect(image.style.transform).toBe('')
   })
 
   it('flip を指定すると左右反転して表示する', () => {
@@ -17,7 +17,7 @@ describe('Zangief', () => {
 
     const image = screen.getByRole('img', { name: 'Zangief' })
     expect(image).toHaveAttribute('width', '64')
-    expect(image).toHaveStyle({ transform: 'scale(-1,1)' })
+    expect(image).toHaveStyle({ transform: 'scaleX(-1)' })
   })
 
   it('action ごとに異なる画像を表示する', () => {
