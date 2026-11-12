@@ -5,7 +5,6 @@
     "@babel/preset-typescript"
   ],
   "plugins": [
-    "macros",
     [
       "inline-import-data-uri",
       {
