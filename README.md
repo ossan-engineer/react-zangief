@@ -18,14 +18,14 @@ https://ossan-engineer.github.io/react-zangief
 
 ```
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import Zangief from 'react-zangief';
 
 const App = () => {
   return <Zangief action="stand" size={16} flip />;
 }
 
-ReactDOM.render(<App />, document.querySelector('#app'));
+createRoot(document.querySelector('#app')).render(<App />);
 ```
 
 ## Props
