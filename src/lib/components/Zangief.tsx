@@ -6,9 +6,18 @@ import jump from '../assets/zangiefJump.gif'
 import attack from '../assets/zangiefLightAttack.gif'
 import damaged from '../assets/zangiefDamaged.gif'
 
-type Props = {
+export type Props = {
+  /**
+   * Animation type.
+   */
   action?: 'default' | 'stand' | 'walk' | 'jump' | 'attack' | 'damaged'
+  /**
+   * The size of Zangief.
+   */
   size?: number
+  /**
+   * Flip Zangief direction.
+   */
   flip?: boolean
 }
 

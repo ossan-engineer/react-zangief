@@ -2,6 +2,7 @@
   "name": "react-zangief",
   "version": "1.0.8",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "private": false,
   "files": [
     "dist",
@@ -13,7 +14,7 @@
   },
   "packageManager": "pnpm@11.28.0",
   "scripts": {
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --extensions '.ts,.tsx' --ignore '**/*.test.tsx' --out-dir dist",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --extensions '.ts,.tsx' --ignore '**/*.test.tsx,**/*.stories.tsx' --out-dir dist && tsc -p tsconfig.build.json",
     "test": "vitest run",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
