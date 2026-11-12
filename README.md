@@ -12,7 +12,7 @@ https://ossan-engineer.github.io/react-zangief
 
 ## Installation
 
-`yarn add react-zangief`
+`pnpm add react-zangief`
 
 ## Usage
 
