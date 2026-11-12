@@ -33,11 +33,11 @@
     ]
   },
   "devDependencies": {
-    "@babel/cli": "7.21.0",
-    "@babel/core": "7.29.13",
-    "@babel/preset-env": "7.20.2",
-    "@babel/preset-react": "7.18.6",
-    "@babel/preset-typescript": "7.29.7",
+    "@babel/cli": "8.1.0",
+    "@babel/core": "8.1.2",
+    "@babel/preset-env": "8.0.7",
+    "@babel/preset-react": "8.0.1",
+    "@babel/preset-typescript": "8.0.7",
     "@storybook/react-vite": "10.6.7",
     "@storybook/storybook-deployer": "2.8.16",
     "@testing-library/dom": "^10.4.2",
