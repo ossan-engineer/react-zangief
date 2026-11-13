@@ -12,7 +12,7 @@
     "type": "git",
     "url": "https://github.com/ossan-engineer/react-zangief"
   },
-  "packageManager": "pnpm@11.28.0",
+  "packageManager": "pnpm@11.28.12",
   "scripts": {
     "build": "rm -rf dist && NODE_ENV=production babel src/lib --extensions '.ts,.tsx' --ignore '**/*.test.tsx,**/*.stories.tsx' --out-dir dist && tsc -p tsconfig.build.json",
     "test": "vitest run",
