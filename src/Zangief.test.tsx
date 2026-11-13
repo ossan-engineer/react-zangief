@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
 
-import Zangief from './Zangief'
+import Zangief from '.'
 
 describe('Zangief', () => {
   it('指定がなければ幅 32 で左右反転せずに表示する', () => {

@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: 'src/lib/index.ts',
+      entry: 'src/index.tsx',
       formats: ['es', 'cjs'],
       fileName: 'index'
     },

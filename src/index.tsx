@@ -1,9 +1,11 @@
-import damaged from '../assets/zangiefDamaged.gif'
-import normal from '../assets/zangiefDefault.gif'
-import jump from '../assets/zangiefJump.gif'
-import attack from '../assets/zangiefLightAttack.gif'
-import stand from '../assets/zangiefStand.gif'
-import walk from '../assets/zangiefWalk.gif'
+import type { ReactElement } from 'react'
+
+import damaged from './assets/zangiefDamaged.gif'
+import normal from './assets/zangiefDefault.gif'
+import jump from './assets/zangiefJump.gif'
+import attack from './assets/zangiefLightAttack.gif'
+import stand from './assets/zangiefStand.gif'
+import walk from './assets/zangiefWalk.gif'
 
 export type Action =
   'default' | 'stand' | 'walk' | 'jump' | 'attack' | 'damaged'
@@ -32,7 +34,12 @@ export type Props = {
   flip?: boolean
 }
 
-const Zangief = ({ action = 'default', size = 32, flip = false }: Props) => (
+// 戻り値の型を書かないと型定義が React.JSX を参照し、React.JSX のない古い @types/react で読めなくなるため
+const Zangief = ({
+  action = 'default',
+  size = 32,
+  flip = false
+}: Props): ReactElement => (
   <img
     src={IMAGES[action]}
     alt="Zangief"
