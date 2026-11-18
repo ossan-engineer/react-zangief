@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 
-import Zangief from './Zangief'
+import Zangief from '.'
 
 const meta: Meta<typeof Zangief> = {
   title: 'Zangief',

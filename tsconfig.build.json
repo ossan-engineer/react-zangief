@@ -4,9 +4,8 @@
     "noEmit": false,
     "declaration": true,
     "emitDeclarationOnly": true,
-    "rootDir": "src/lib",
+    "rootDir": "src",
     "outDir": "dist"
   },
-  "include": ["src/lib", "src/vite-env.d.ts"],
-  "exclude": ["src/**/*.test.tsx", "src/**/*.stories.tsx"]
+  "include": ["src/index.tsx", "src/vite-env.d.ts"]
 }
