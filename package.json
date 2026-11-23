@@ -27,7 +27,7 @@
     "dist"
   ],
   "sideEffects": false,
-  "packageManager": "pnpm@11.28.0",
+  "packageManager": "pnpm@12.23.0",
   "scripts": {
     "build": "vite build && tsc -p tsconfig.build.json && cp dist/index.d.ts dist/index.d.cts",
     "test": "vitest run",
